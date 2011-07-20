@@ -66,6 +66,9 @@ clean_bib <- function(entry) {
   if (!is.null(entry$note)) {
     entry$note <- str_replace_all(entry$note, "\\[|\\]", "")    
   }
+  if (!is.null(entry$pages)) {
+    entry$pages <- str_replace_all(entry$pages, "-|--", "&#8211;")    
+  }
 
   entry
 }
