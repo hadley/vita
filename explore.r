@@ -6,6 +6,14 @@ library("tools")
 library("sinartra")
 
 me <- read.bib("me.bib", "UTF-8")
+clean_bib <- function(entry) {
+  entry$title <- str_replace_all(entry$title, "[{}]", "")
+  entry
+}
+
+me <- lapply(me, clean_bib)
+
+
 source("render.r")
 source("render-page.r")
 
