@@ -28,7 +28,7 @@ make_vita <- function(path = "~/documents/vita/public", templates = "~/documents
     values$sidebar <- "&nbsp;"
     values$header <-  page$header
 
-    brew(file.path(templates, "template-article.html"), 
+    brew(file.path(templates, "template.html"), 
       str_c("papers/", entry$key, ".html"), envir = values) 
   }
 
