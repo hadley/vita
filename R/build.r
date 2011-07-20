@@ -11,8 +11,7 @@ make_vita <- function(path = "~/documents/vita/public", templates = "~/documents
   me <- read.bib("me.bib", "UTF-8")
   me <- lapply(me, clean_bib)
 
-  type <- vapply(me, function(x) attr(unclass(x)[[1]], "bibtype"), 
-    FUN.VALUE = character(1))
+  type <- vapply(me, function(x) x$bibtype, FUN.VALUE = character(1))
   by_type <- split(me, type)
 
   make_thumbs()
@@ -67,5 +66,6 @@ clean_bib <- function(entry) {
   if (!is.null(entry$note)) {
     entry$note <- str_replace_all(entry$note, "\\[|\\]", "")    
   }
+
   entry
 }
