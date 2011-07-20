@@ -9,8 +9,6 @@ Next up:
 
 * 2010 articles
 * 2009 articles
-* 2008 articles
-* 2007 article 
 
 * look for DOI / publisher url
 * add preprint
