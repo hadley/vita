@@ -11,8 +11,8 @@ render_entry <- function(entry, link = TRUE) {
     link_f <- function(x) x
   }
   
-  authors <- rbind.fill(lapply(entry$author, as.data.frame))
-  author_string <- str_c(authors$given, " ", authors$family, collapse = ", ")
+  authors <- str_c(vapply(entry$author, format, character(1)), 
+    collapse = ", ")
   
   thumb_path <- file.path("thumbs", str_c(entry$key, ".png"))
   if (file.exists(thumb_path)) {
@@ -44,7 +44,7 @@ render_entry <- function(entry, link = TRUE) {
     "<div class='citation'>\n",
     thumb,
     "  <ul>\n",
-    "    <li class='author'>", author_string, ".</li>\n",
+    "    <li class='author'>", authors, ".</li>\n",
     "    <li class='title'>", link_f(entry$title), ".</li>\n",
     if (!is.null(citation)) 
     str_c("    <li class='citation'>", citation, "</li>\n"),
@@ -55,9 +55,5 @@ render_entry <- function(entry, link = TRUE) {
     "  <br clear='all' />",
     "</div>\n"
   )
-}
-
-as.data.frame.person <- function(x) {
-  data.frame(Filter(Negate(is.null), unclass(x)[[1]]))
 }
 
