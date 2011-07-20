@@ -57,7 +57,13 @@ div.citation {margin-top: 1em;}
 .citation .note {font-size: 90%}
 
 
-.sidebar {text-align: right; padding-top: 1em}
-.sidebar ul {list-style: inside disc; }
+.sidebar { padding-top: 1em}
+.sidebar ul {list-style: inside disc; margin-bottom: 1em;}
+.sidebar li {display: inline;}
+.sidebar h3 {font-size: 1.5em;}
+
+.sidebar li:before {
+	content: "• ";
+	}
 
 a:hover {color: #569700}
