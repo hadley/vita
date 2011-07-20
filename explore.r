@@ -46,7 +46,7 @@ for(id in seq_along(me)) {
   values$sidebar <- "&nbsp;"
   values$header <-  page$header
   
-  brew("template.html", str_c("papers/", entry$key, ".html"), 
+  brew("template-article.html", str_c("papers/", entry$key, ".html"), 
     envir = values) 
 }
 

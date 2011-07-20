@@ -5,7 +5,7 @@
   <!-- Basic Page Needs
   ================================================== -->
   <meta charset="utf-8" />
-  <title>Bay area blues: the effect of the housing crisis</title>
+  <title><%= title %></title>
   
   <!-- Mobile Specific Metas
   ================================================== -->
@@ -40,36 +40,14 @@
   <div class="container article">  
     <div class="sixteen columns"><header>
       <p>Hadley Wickham</p>
-      <h1>Bay area blues: the effect of the housing crisis</h1>
-
+      <%= header %>
     </header></div>
 
     <div class="eleven columns content">
-      <div class='citation'>
-  <img src='/thumbs/bay-area-blues.png' width='100' />
-  <ul>
-    <li class='author'>Hadley Wickham, David Poole, Deborah Swayne, F Swayne.</li>
-    <li class='title'>Bay area blues: the effect of the housing crisis.</li>
-  </ul>
-<p class='download'><span>Download</span>: 
-<a href='papers/bay-area-blues.pdf'>pre-print</a> | <a href='http://amzn.com/0596157118'>from publisher</a></p>
-  <br clear='all' /></div>
-<pre class='bibtex'>@InCollection{bay-area-blues,
-  author = {Hadley Wickham and David Poole and Deborah F Swayne},
-  booktitle = {Beautiful data},
-  chapter = {18},
-  date-added = {2009-02-13 09:08:17 -0600},
-  date-modified = {2010-07-18 06:05:24 -0500},
-  pages = {303--319},
-  publisher = {O'Reilly},
-  title = {Bay area blues: the effect of the housing crisis},
-  year = {2009},
-  url = {http://amzn.com/0596157118},
-}</pre>
-
+      <%= content %>
     </div>
     <div class="four columns sidebar offset-by-one">
-      &nbsp;
+      <%= sidebar %>
     </div>
 
     <div class="sixteen columns">
