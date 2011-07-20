@@ -1,8 +1,7 @@
 Next up:
 
-* build individual paper pages to display links, abstract and bibtex
 * home page, selected bibtex tag
-* atom feed (what to use for date added? hashed keys?)
+* atom feed (manual recent selection)
 * check authors ( Publishing Animations, 3D Visualizations, and Movies in JCGS.)
 * sort within a year
 * add some colour!
@@ -15,11 +14,6 @@ Next up:
   
 * add recent presentations.
 * all files for 2011
-* search for doi's
-
-* upload to github
-* set up CNAME and subdomain
-* update homepage links
 
 * update cv
 
