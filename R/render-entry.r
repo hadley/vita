@@ -5,7 +5,7 @@ render_entry <- function(entry, link = TRUE) {
       paper_path <- file.path("papers", str_c(entry$key, ".html"))
       if (!file.exists(paper_path)) return(x)
       
-      str_c("<a href='", paper_path, "'>", x, "</a>")
+      str_c("<a href='/", paper_path, "'>", x, "</a>")
     }
   } else {
     link_f <- function(x) x
@@ -25,7 +25,7 @@ render_entry <- function(entry, link = TRUE) {
   paper_path <- file.path("papers", str_c(entry$key, ".pdf"))
   links <- c(
     if (file.exists(paper_path))
-      str_c("<a href='", paper_path, "'>pre-print</a>"),
+      str_c("<a href='/", paper_path, "'>pre-print</a>"),
     if (!is.null(entry$url)) 
       str_c("<a href='", entry$url, "'>from publisher</a>"),
     if (!is.null(entry$doi)) 

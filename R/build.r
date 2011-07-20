@@ -44,6 +44,10 @@ make_vita <- function(path = "~/documents/vita/public", templates = "~/documents
     brew(file.path(templates, "template.html"), 
       str_c(paths[type], ".html"), envir = values)
   }
+
+  page <- render_index(me)
+  brew(file.path(templates, "template.html"), "index.html", 
+    envir = list2env(page))
   
 }
 
