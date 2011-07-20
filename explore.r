@@ -29,18 +29,6 @@ paths <- c("Article" = "articles", "Book" = "books", "InCollection" = "chapters"
 "Unpublished" = "presentations")
 
 make_thumbs()
-for(type in names(titles)) {
-  page <- render_page(by_type[[type]], type)
-  
-  values <- new.env(parent = globalenv())
-  values$title <- str_c(titles[type], " by Hadley Wickham.")
-  values$content <- page$content
-  values$sidebar <- page$sidebar
-  values$header <-  page$header
-  
-  brew("template.html", str_c(paths[type], ".html"), envir = values)
-  
-}
 
 for(id in seq_along(me)) {
   entry <- me[[id]]
@@ -56,6 +44,19 @@ for(id in seq_along(me)) {
   
   brew("template-article.html", str_c("papers/", entry$key, ".html"), 
     envir = values) 
+}
+
+for(type in names(titles)) {
+  page <- render_page(by_type[[type]], type)
+  
+  values <- new.env(parent = globalenv())
+  values$title <- str_c(titles[type], " by Hadley Wickham.")
+  values$content <- page$content
+  values$sidebar <- page$sidebar
+  values$header <-  page$header
+  
+  brew("template.html", str_c(paths[type], ".html"), envir = values)
+  
 }
 
 preview <- function(show = FALSE) {
