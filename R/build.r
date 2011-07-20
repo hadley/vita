@@ -9,10 +9,6 @@ make_vita <- function(path = "~/documents/vita/public", templates = "~/documents
   on.exit(setwd(old))
   
   me <- read.bib("me.bib", "UTF-8")
-  clean_bib <- function(entry) {
-    entry$title <- str_replace_all(entry$title, "[{}]", "")
-    entry
-  }
   me <- lapply(me, clean_bib)
 
   type <- vapply(me, function(x) attr(unclass(x)[[1]], "bibtype"), 
@@ -64,4 +60,12 @@ make_thumbs <- function() {
   lapply(cmd, system)
   
   invisible()
+}
+
+clean_bib <- function(entry) {
+  entry$title <- str_replace_all(entry$title, "[{}]", "")
+  if (!is.null(entry$note)) {
+    entry$note <- str_replace_all(entry$note, "\\[|\\]", "")    
+  }
+  entry
 }
