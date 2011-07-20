@@ -4,7 +4,6 @@ Next up:
 * atom feed (manual recent selection)
 * check authors ( Publishing Animations, 3D Visualizations, and Movies in JCGS.)
 * sort within a year
-* add some colour!
 
 * fill in more bibtex
   * look for DOI / publisher url

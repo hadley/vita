@@ -1,3 +1,4 @@
+/* http://colorschemedesigner.com/#2u11Tw0w0w0w0 */
 html, body {
   background-image: url("/-png/whitey.png");
 }
@@ -16,12 +17,13 @@ pre {
   padding: 5px; 
   line-height: 1.4em;
   margin: 0.75em 0 0.75em 0;
+  overflow: hidden;
 }
 
 header {
   margin-top: 5em;
   margin-bottom: 3em;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #84E900;
 }
 header p {
   font-weight: bold;
@@ -31,7 +33,7 @@ header p {
 footer {
   margin-top: 1em;
   margin-bottom: 1em;
-  border-top: solid #ccc 1px;
+  border-top: solid #84E900 1px;
   padding: 5px;
 }
 
@@ -59,3 +61,5 @@ header h1 {width: 100%}
 
 .sidebar {text-align: right; padding-top: 0px}
 .sidebar ul {list-style: inside disc;}
+
+a:hover {color: #569700}
