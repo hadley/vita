@@ -1,0 +1,15 @@
+Title: Build an academic portfolio
+Package: vita
+Author: Hadley Wickham <h.wickham@gmail.com>
+Maintainer: Hadley Wickham <h.wickham@gmail.com>
+Description: 
+Imports:
+    stringr,
+    bibtex,
+    brew,
+    plyr,
+    tools,
+    sinartra
+License: GPL-2
+Type: Package
+Version: 0.1
