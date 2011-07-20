@@ -1,0 +1,46 @@
+pre, code {
+  font-family: 'Inconsolata', monospace;
+  background-color: #eee;
+  color: #000;
+}
+
+pre {
+  border: 1px solid #ccc;
+  padding: 5px; 
+  line-height: 1.4em;
+  margin: 0.75em 0 0.75em 0;
+}
+
+header {
+  margin-top: 5em;
+  margin-bottom: 3em;
+  border-bottom: 1px solid #ccc;
+}
+footer {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+h2 {
+  background-color: #999;
+  padding: 5px;
+  color: white;
+  margin-top: 0.5em;
+}
+
+header h1 {width: 100%}
+
+
+.citation {margin-top: 1em;}
+.citation ul {
+   list-style: none;
+}
+.citation img {float: left; }
+.citation .title {font-weight: bold}
+
+.citation li { line-height: 18px; margin-bottom: 2px; }
+.citation ul {margin-bottom: 0}
+
+
+.sidebar {text-align: right; padding-top: 0px}
+.sidebar ul {list-style: inside disc;}
