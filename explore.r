@@ -3,6 +3,7 @@ library("bibtex")
 library("brew")
 library("plyr")
 library("tools")
+library("sinartra")
 
 me <- read.bib("me.bib", "UTF-8")
 source("render.r")
@@ -47,4 +48,35 @@ for(id in seq_along(me)) {
   
   brew("template.html", str_c("papers/", entry$key, ".html"), 
     envir = values) 
+}
+
+preview <- function(show = FALSE) {
+  router <- Router$clone()
+  router$set_file_path(getwd())
+  router$get("*", function(splat, ...) {
+    if (splat == "") return(router$redirect("/"))
+    
+    path <- file.path(getwd(), splat)
+    if (file_test("-d", path)) {
+      index <- file.path(path, "index.html") 
+      if (file.exists(index)) {
+        path <- index
+      } else {         
+        return(sinartra:::render(dir(path)))
+      }
+    }
+    static_file(path)
+  })
+  route <- function(path, query, ...){
+    router$route(path, query)
+  } 
+  port <- tools:::httpdPort
+  if (port == 0L) {
+    port <- startDynamicHelp()    
+  }
+  assignInNamespace("httpd", route, "tools")
+  if (show) {
+    home <- str_c("http://localhost:", port, "/index.html")
+    browseURL(home)        
+  }
 }

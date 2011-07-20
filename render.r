@@ -47,7 +47,7 @@ render_entry <- function(entry, link = TRUE) {
   
   thumb_path <- file.path("thumbs", str_c(entry$key, ".png"))
   if (file.exists(thumb_path)) {
-    thumb <- link_f(str_c("  <img src='", thumb_path, "' width='100' />\n"))
+    thumb <- link_f(str_c("  <img src='/", thumb_path, "' width='100' />\n"))
   } else {
     thumb <- NULL
   }
