@@ -1,6 +1,9 @@
 render_index <- function(entries) {
   
   selected <- Filter(function(x) !is.null(x$selected), entries)
+  year <- vapply(selected, function(x) as.numeric(x$year), numeric(1))
+  selected <- selected[order(-year)]
+
   content <- str_c(
     "<h2>Selected publications</h2>\n",
     str_c(vapply(selected, render_entry, character(1)), 
