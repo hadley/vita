@@ -25,7 +25,7 @@ for(type in names(titles)) {
   page <- render_page(by_type[[type]], type)
   
   values <- new.env(parent = globalenv())
-  values$title <- titles[type]
+  values$title <- str_c(titles[type], " by Hadley Wickham.")
   values$content <- page$content
   values$sidebar <- page$sidebar
   values$header <-  page$header

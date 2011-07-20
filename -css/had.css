@@ -31,6 +31,8 @@ header p {
 footer {
   margin-top: 1em;
   margin-bottom: 1em;
+  border-top: solid #ccc 1px;
+  padding: 5px;
 }
 
 h2 {
