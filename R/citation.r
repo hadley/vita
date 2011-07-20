@@ -8,7 +8,7 @@ cite <- function(entry) {
 cite_f <- list(
   Article = function(entry) {
     str_c(
-      "<em>", entry$journal, "</em>,", 
+      "<em>", entry$journal, "</em>, ", 
       if (!is.null(entry$volume)) 
         str_c("vol. ", entry$volume, ", "), 
       if (!is.null(entry$number)) 
