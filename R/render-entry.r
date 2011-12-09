@@ -28,6 +28,8 @@ render_entry <- function(entry, link = TRUE) {
       str_c("<a href='/", paper_path, "'>pre-print</a>"),
     if (!is.null(entry$url)) 
       str_c("<a href='", entry$url, "'>from publisher</a>"),
+    if (!is.null(entry$videourl)) 
+      str_c("<a href='", entry$videourl, "'>watch online</a>"),
     if (!is.null(entry$doi)) 
       str_c("<a href='http://dx.doi.org/", entry$doi, "'>via doi</a>\n")
     )
