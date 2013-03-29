@@ -1,0 +1,6 @@
+import(stringr)
+importFrom(bibtex,read.bib)
+importFrom(brew,brew)
+importFrom(sinartra,Router)
+importFrom(sinartra,static_file)
+importFrom(tools,startDynamicHelp)
