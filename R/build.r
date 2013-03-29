@@ -4,6 +4,12 @@ titles <- c("Article" = "Journal articles", "Book" = "Books", "InCollection" = "
 paths <- c("Article" = "articles", "Book" = "books", "InCollection" = "chapters", "PhdThesis" = "theses", "TechReport" = "tech-reports",
 "Unpublished" = "presentations")
 
+#' Make vita.
+#'
+#' @importFrom bibtex read.bib
+#' @import stringr
+#' @importFrom brew brew
+#' @export
 make_vita <- function(path = "~/documents/vita/public", templates = "~/documents/vita/vita") {
   old <- setwd(path)
   on.exit(setwd(old))
@@ -51,6 +57,7 @@ make_vita <- function(path = "~/documents/vita/public", templates = "~/documents
 
 }
 
+#' @importFrom tools file_path_sans_ext
 make_thumbs <- function() {
   papers <- file_path_sans_ext(dir("papers", "*.pdf"))
   thumbs <- file_path_sans_ext(dir("thumbs"))

@@ -13,3 +13,11 @@ Imports:
 License: GPL-2
 Type: Package
 Version: 0.1
+Collate:
+    'build.r'
+    'citation.r'
+    'preview.r'
+    'render-entry.r'
+    'render-index.r'
+    'render-page.r'
+    'render.r'
