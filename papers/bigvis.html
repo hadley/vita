@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  ================================================== -->
+  <meta charset="utf-8" />
+  <title>Bin-summarise-smooth: a framework for visualising large data</title>
+  
+  <!-- Mobile Specific Metas
+  ================================================== -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" /> 
+  
+  <!-- CSS
+  ================================================== -->
+  <link href='http://fonts.googleapis.com/css?family=Inconsolata&amp;v2'
+    rel='stylesheet' type='text/css'>    
+  <link rel="stylesheet" href="/-css/base.css">
+  <link rel="stylesheet" href="/-css/skeleton.css">
+  <link rel="stylesheet" href="/-css/layout.css">
+  <link rel="stylesheet" href="/-css/had.css">
+  
+  <!-- JS
+  ================================================== -->
+  <!--[if lt IE 9]>
+    <script src="-js/html5.js"></script>
+  <![endif]-->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.js"></script>
+  <script>window.jQuery || document.write("<script src='-js/jquery-1.5.1.min.js'>\x3C/script>")</script>
+  <script src="/-js/app.js"></script>
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-67989-2']);
+    _gaq.push(['_setDomainName', 'had.co.nz']);
+    _gaq.push(['_setAllowHash', 'false']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+  </script>
+  
+</head>
+<body>
+
+  <div class="container">  
+    <div class="sixteen columns"><header>
+      <p><a href="/">Hadley Wickham's</a></p>
+      <h1>Bin-summarise-smooth: a framework for visualising large data</h1>
+
+    </header></div>
+
+    <div class="eleven columns content">
+      <div class='citation'>
+  <img src='/thumbs/bigvis.png' width='100' />
+  <ul>
+    <li class='author'>Hadley Wickham.</li>
+    <li class='title'>Bin-summarise-smooth: a framework for visualising large data.</li>
+    <li class='citation'><em>Infovis 2013</em>, Submitted.</li>
+  </ul>
+<p class='download'><span>Download</span>: 
+<a href='/papers/bigvis.pdf'>pre-print</a></p>
+  <br clear='all' /></div>
+<p class='abstract'>Visualising large data is challenging both perceptually and computationally: it is hard to know what to display and hard to efficiently display it once you know what you want. This paper proposes a framework that tackles both problems, based around a four step process of bin, summarise, smooth, and visualise. Binning and summarising efficiently (O(n)) condense the large raw data into a form suitable for display (recognising that there are ∼3 million pixels on a screen). Smoothing helps resolve problems from binning and summarising, and because it works on smaller, condensed datasets, it can make use of algorithms that are more statistically efficient even if computationally expensive. The paper is accompanied by a single-core in-memory reference implementation, and is readily extensible with parallel and out-of-memory techniques.</p>
+
+<pre class='bibtex'>@Article{bigvis,
+  title = {Bin-summarise-smooth: a framework for visualising large data},
+  author = {Hadley Wickham},
+  year = {Submitted},
+  journal = {Infovis 2013},
+}</pre>
+
+    </div>
+    <div class="four columns sidebar offset-by-one">
+      &nbsp;
+    </div>
+
+    <div class="sixteen columns">
+      <hr />
+      <footer>
+      Built with <a href="http://r-project.org">R</a>, the <a href="http://cran.r-project.org/web/packages/bibtex/index.html">bibtex package</a>, and <a href="http://cran.r-project.org/web/packages/brew">brew</a>.  Styled with <a href="http://www.getskeleton.com/">skeleton</a> and <a href="http://subtlepatterns.com/">subtlepatterns</a>.  Hosted on <a href="http://github.com">github</a>.
+      </footer>
+    </div>
+  </div><!-- container -->
+    
+  
+<!-- End Document
+================================================== -->
+</body>
+</html>
+
+<title></title>
+
