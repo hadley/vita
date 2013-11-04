@@ -1,10 +1,18 @@
+@techreport{constrained-layout,
+	title = {A constraint-based layout approach to data visualization},
+	author = {Joey Huchette and Hadley Wickham},
+	year = {2013},
+	abstract = {This work explores the connection between statistical data visualization problems and simulated physical systems. Apply- ing techniques for constraint-based layout, data points are treated as physical objects under the influence of forces such as gravity and electrostatic repulsion. Many common statistical data visualization problems can be viewed through this lens; we consider scatterplot overplotting and the Dorling cartogram as our motivating problems. The reference implementation is straightforward and capable of producing instructive visualizations. Additionally, we present a suite of tools useful for tuning the system parameters that determine the quality of the produced visualization.},
+	institution = {Rice University}
+}
+
 @article{sensemaking,
 	title = {A Cognitive Interpretation of Data Analysis},
 	author = {Garrett Grolemund and Hadley Wickham},
 	year = {Submitted},
 	journal = {International Journal of Statistics},
 	abstract = {
-	This paper proposes a scientific model to explain the data analysis process. We argue that data analysis is primarily a procedure to build understanding and as such, it dovetails with the cognitive processes of the human mind. Data analysis tasks closely resemble the cognitive pro- cess known as sensemaking. We demonstrate how data analysis is a sensemaking task adapted to use quantitative data. This identification highlights a universal structure within data analy- sis activities and provides a foundation for a theory of data analysis. The competing tensions of cognitive compatibility and scientific rigor create a series of problems that characterize the data analysis process. These problems form a useful organizing model for the data analysis task while allowing methods to remain flexible and situation dependent. The insights of this model are especially helpful for consultants, applied statisticians, and teachers of data analysis.
+	This paper proposes a scientific model to explain the data analysis process. We argue that data analysis is primarily a procedure to build understanding and as such, it dovetails with the cognitive processes of the human mind. Data analysis tasks closely resemble the cognitive process known as sensemaking. We demonstrate how data analysis is a sensemaking task adapted to use quantitative data. This identification highlights a universal structure within data analysis activities and provides a foundation for a theory of data analysis. The competing tensions of cognitive compatibility and scientific rigor create a series of problems that characterize the data analysis process. These problems form a useful organizing model for the data analysis task while allowing methods to remain flexible and situation dependent. The insights of this model are especially helpful for consultants, applied statisticians, and teachers of data analysis.
 	}
 }
 
@@ -13,15 +21,15 @@
 	author = {Garrett Grolemund and Hadley Wickham},
 	year = {Submitted},
 	journal = {Journal of Computational and Graphical Statistics},
-	abstract = {This paper describes a class of graphs, embedded plots, that are particularly useful for analyzing large and complex data sets. Embedded plots organize a collection of graphs into a larger graphic. This arrangement allows for more complex relationships to be visu- alized within a static graphs than would otherwise be possible. Embedded plots provide additional axes, prevent overplotting, provide multiple levels of summarization, and facili- tate understanding. Complex data overwhelms the human cognitive system, which prevents comprehension. Embedded plots preprocess complex data into a form more suitable for the human cognitive system through visualization, isolation, and automation. We illustrate the usefulness of embedded plots with a case study, discuss the practical and cognitive advan- tages of embedded plots, and demonstrate how to implement embedded plots as a general class within visualization software, something currently unavailable.}
+	abstract = {This paper describes a class of graphs, embedded plots, that are particularly useful for analyzing large and complex data sets. Embedded plots organize a collection of graphs into a larger graphic. This arrangement allows for more complex relationships to be visualized within a static graphs than would otherwise be possible. Embedded plots provide additional axes, prevent overplotting, provide multiple levels of summarization, and facilitate understanding. Complex data overwhelms the human cognitive system, which prevents comprehension. Embedded plots preprocess complex data into a form more suitable for the human cognitive system through visualization, isolation, and automation. We illustrate the usefulness of embedded plots with a case study, discuss the practical and cognitive advantages of embedded plots, and demonstrate how to implement embedded plots as a general class within visualization software, something currently unavailable.}
 }
 
-@article{bigvis,
+@techreport{bigvis,
 	title = {Bin-summarise-smooth: a framework for visualising large data},
 	author = {Hadley Wickham},
-	year = {Submitted},
-	journal = {Infovis 2013},
-	abstract = {Visualising large data is challenging both perceptually and computationally: it is hard to know what to display and hard to efficiently display it once you know what you want. This paper proposes a framework that tackles both problems, based around a four step process of bin, summarise, smooth, and visualise. Binning and summarising efficiently (O(n)) condense the large raw data into a form suitable for display (recognising that there are ∼3 million pixels on a screen). Smoothing helps resolve problems from binning and summarising, and because it works on smaller, condensed datasets, it can make use of algorithms that are more statistically efficient even if computationally expensive. The paper is accompanied by a single-core in-memory reference implementation, and is readily extensible with parallel and out-of-memory techniques.}
+	year = {2013},
+	abstract = {Visualising large data is challenging both perceptually and computationally: it is hard to know what to display and hard to efficiently display it once you know what you want. This paper proposes a framework that tackles both problems, based around a four step process of bin, summarise, smooth, and visualise. Binning and summarising efficiently (O(n)) condense the large raw data into a form suitable for display (recognising that there are ∼3 million pixels on a screen). Smoothing helps resolve problems from binning and summarising, and because it works on smaller, condensed datasets, it can make use of algorithms that are more statistically efficient even if computationally expensive. The paper is accompanied by a single-core in-memory reference implementation, and is readily extensible with parallel and out-of-memory techniques.},
+	institution = {RStudio}
 }
 
 @article{syringe,
