@@ -10,7 +10,7 @@ paths <- c("Article" = "articles", "Book" = "books", "InCollection" = "chapters"
 #' @import stringr
 #' @importFrom brew brew
 #' @export
-make_vita <- function(path = "~/documents/vita/public", templates = "~/documents/vita/vita") {
+make_vita <- function(path = "~/documents/career/vita/public", templates = "~/documents/career/vita/vita") {
   old <- setwd(path)
   on.exit(setwd(old))
 
@@ -18,6 +18,7 @@ make_vita <- function(path = "~/documents/vita/public", templates = "~/documents
   me <- lapply(me, clean_bib)
 
   type <- vapply(me, function(x) x$bibtype, FUN.VALUE = character(1))
+  type[type == "techreport"] <- "article"
   by_type <- split(me, type)
 
   make_thumbs()
