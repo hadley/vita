@@ -1,77 +1,112 @@
-@techreport{density-estimation,
-  title = {Density estimation in R},
-	author = {Henry Deng and Hadley Wickham},
-	year = {2011},
-	abstract = {Density estimation is an important statistical tool, and within R there are over 20 packages that implement it: so many that it is often difficult to know which to use. This paper presents a brief outline of the theory underlying each package, as well as an overview of the code and comparison of speed and accuracy. We focus on univariate methods, but include pointers to other more specialised packages.
 
-Overall, we found ASH and KernSmooth to be excellent: they are both fast, accurate, and well-maintained.},
-	institution = {had.co.nz}
+@article{ims-impact, 
+  Author = {Wickham, Hadey},
+  Title = {Hadley Wickham: Impact the world by being useful},
+  Journal = {IMS Bulletin}, 
+  Year = {2015},
+  Url = {http://bulletin.imstat.org/2014/12/hadley-wickham-impact-the-world-by-being-useful/}
 }
+
+@article{ims-datasci, 
+  Author = {Wickham, Hadey},
+  Title = {Data science: how is it different to statistics?},
+  Journal = {IMS Bulletin}, 
+  Year = {2014},
+  Url = {http://bulletin.imstat.org/2014/09/data-science-how-is-it-different-to-statistics%E2%80%89/}
+}
+
+
+@article{model-vis,
+	Author = {Wickham, Hadley and Cook, Dianne and Hofmann, Heike},
+	Date-Added = {2015-08-20 15:45:48 +0000},
+	Date-Modified = {2015-08-20 15:45:59 +0000},
+	Journal = {Statistical Analysis and Data Mining: The ASA Data Science Journal},
+	Number = {4},
+	Pages = {203--225},
+	Title = {Visualizing statistical models: Removing the blindfold},
+	Volume = {8},
+	Year = {2015}}
+
+@techreport{density-estimation,
+	Author = {Deng, Henry and Wickham, Hadley},
+	Institution = {had.co.nz},
+	Title = {Density estimation in R},
+	Year = {2011},
+	Abstract = {Density estimation is an important statistical tool, and within R there are over 20 packages that implement it: so many that it is often difficult to know which to use. This paper presents a brief outline of the theory underlying each package, as well as an overview of the code and comparison of speed and accuracy. We focus on univariate methods, but include pointers to other more specialised packages.
+
+Overall, we found ASH and KernSmooth to be excellent: they are both fast, accurate, and well-maintained.}}
 
 @article{data-sci-precursors,
-  title = {Teaching precursors to data science in introductory and second courses in statistics}, 
-  author = {Nicholas Horton and Ben Baumer and Hadley Wickham},
-  journal = {ICOTS 2014},
-  year = Submitted,
-  abstract = {Statistics students need to develop the capacity to make sense of the staggering amount of information collected in our increasingly data-centered world. Data science is an important part of modern statistics, but our introductory and second statistics courses often neglect this fact. This paper discusses ways to provide a practical foundation for students to learn to "compute with data" as defined by Nolan and Temple Lang (2010), as well as develop "data habits of mind" (Finzer, 2013). We describe how introductory and second courses can integrate two key precursors to data science: the use of reproducible analysis tools and access to large databases. By introducing students to commonplace tools for data management, visualization, and reproducible analysis in data science and applying these to real-world scenarios, we prepare them to think statistically in the era of big data.}
-}
-
+	Author = {Horton, Nicholas and Baumer, Ben and Wickham, Hadley},
+	Journal = {ICOTS 2014},
+	Title = {Teaching precursors to data science in introductory and second courses in statistics},
+	Year = Submitted,
+	Abstract = {Statistics students need to develop the capacity to make sense of the staggering amount of information collected in our increasingly data-centered world. Data science is an important part of modern statistics, but our introductory and second statistics courses often neglect this fact. This paper discusses ways to provide a practical foundation for students to learn to "compute with data" as defined by Nolan and Temple Lang (2010), as well as develop "data habits of mind" (Finzer, 2013). We describe how introductory and second courses can integrate two key precursors to data science: the use of reproducible analysis tools and access to large databases. By introducing students to commonplace tools for data management, visualization, and reproducible analysis in data science and applying these to real-world scenarios, we prepare them to think statistically in the era of big data.}}
 
 @techreport{constrained-layout,
-	title = {A constraint-based layout approach to data visualization},
-	author = {Joey Huchette and Hadley Wickham},
-	year = {2013},
-	abstract = {This work explores the connection between statistical data visualization problems and simulated physical systems. Apply- ing techniques for constraint-based layout, data points are treated as physical objects under the influence of forces such as gravity and electrostatic repulsion. Many common statistical data visualization problems can be viewed through this lens; we consider scatterplot overplotting and the Dorling cartogram as our motivating problems. The reference implementation is straightforward and capable of producing instructive visualizations. Additionally, we present a suite of tools useful for tuning the system parameters that determine the quality of the produced visualization.},
-	institution = {had.co.nz}
-}
+	Author = {Huchette, Joey and Wickham, Hadley},
+	Institution = {had.co.nz},
+	Title = {A constraint-based layout approach to data visualization},
+	Year = {2013},
+	Abstract = {This work explores the connection between statistical data visualization problems and simulated physical systems. Apply- ing techniques for constraint-based layout, data points are treated as physical objects under the influence of forces such as gravity and electrostatic repulsion. Many common statistical data visualization problems can be viewed through this lens; we consider scatterplot overplotting and the Dorling cartogram as our motivating problems. The reference implementation is straightforward and capable of producing instructive visualizations. Additionally, we present a suite of tools useful for tuning the system parameters that determine the quality of the produced visualization.}}
 
 @article{sensemaking,
-	title = {A Cognitive Interpretation of Data Analysis},
-	author = {Garrett Grolemund and Hadley Wickham},
-  year = {2014},
-	journal = {International Journal of Statistics},
-  volume = {82},
-  number = {2},
-	abstract = {
+	Author = {Grolemund, Garrett and Wickham, Hadley},
+	Journal = {International Journal of Statistics},
+	Number = {2},
+	Pages = {184-204},
+	Title = {A Cognitive Interpretation of Data Analysis},
+	Volume = {82},
+	Year = {2014},
+	Abstract = {
 	This paper proposes a scientific model to explain the data analysis process. We argue that data analysis is primarily a procedure to build understanding and as such, it dovetails with the cognitive processes of the human mind. Data analysis tasks closely resemble the cognitive process known as sensemaking. We demonstrate how data analysis is a sensemaking task adapted to use quantitative data. This identification highlights a universal structure within data analysis activities and provides a foundation for a theory of data analysis. The competing tensions of cognitive compatibility and scientific rigor create a series of problems that characterize the data analysis process. These problems form a useful organizing model for the data analysis task while allowing methods to remain flexible and situation dependent. The insights of this model are especially helpful for consultants, applied statisticians, and teachers of data analysis.
-	},
-  pages = {184-204}
-}
+	}}
 
 @article{sensemaking-rejoinger,
-  title = {A Cognitive Interpretation of Data Analysis: Rejoinder},
-	author = {Garrett Grolemund and Hadley Wickham},
-	year = {2014},
-	journal = {International Journal of Statistics},
-  volume = {82},
-  number = {2},
-  pages = {210-213}
-}
+	Author = {Grolemund, Garrett and Wickham, Hadley},
+	Journal = {International Journal of Statistics},
+	Number = {2},
+	Pages = {210-213},
+	Title = {A Cognitive Interpretation of Data Analysis: Rejoinder},
+	Volume = {82},
+	Year = {2014}}
 
-@article{embedded-plots, 
-	title = {Visualizing Complex Data with Embedded Plots},
-	author = {Garrett Grolemund and Hadley Wickham},
-	year = {Submitted},
-	journal = {Journal of Computational and Graphical Statistics},
-	abstract = {This paper describes a class of graphs, embedded plots, that are particularly useful for analyzing large and complex data sets. Embedded plots organize a collection of graphs into a larger graphic. This arrangement allows for more complex relationships to be visualized within a static graphs than would otherwise be possible. Embedded plots provide additional axes, prevent overplotting, provide multiple levels of summarization, and facilitate understanding. Complex data overwhelms the human cognitive system, which prevents comprehension. Embedded plots preprocess complex data into a form more suitable for the human cognitive system through visualization, isolation, and automation. We illustrate the usefulness of embedded plots with a case study, discuss the practical and cognitive advantages of embedded plots, and demonstrate how to implement embedded plots as a general class within visualization software, something currently unavailable.}
-}
+@article{embedded-plots,
+	Author = {Grolemund, Garrett and Wickham, Hadley},
+	Journal = {Journal of Computational and Graphical Statistics},
+	Number = {1},
+	Pages = {26--43},
+	Title = {Visualizing Complex Data with Embedded Plots},
+	Volume = {24},
+	Year = {2015},
+	Abstract = {This paper describes a class of graphs, embedded plots, that are particularly useful for analyzing large and complex data sets. Embedded plots organize a collection of graphs into a larger graphic. This arrangement allows for more complex relationships to be visualized within a static graphs than would otherwise be possible. Embedded plots provide additional axes, prevent overplotting, provide multiple levels of summarization, and facilitate understanding. Complex data overwhelms the human cognitive system, which prevents comprehension. Embedded plots preprocess complex data into a form more suitable for the human cognitive system through visualization, isolation, and automation. We illustrate the usefulness of embedded plots with a case study, discuss the practical and cognitive advantages of embedded plots, and demonstrate how to implement embedded plots as a general class within visualization software, something currently unavailable.}}
+
+@article{taking-a-chance,
+	Author = {Horton, Nicholas J and Baumer, Benjamin S and Wickham, Hadley},
+	Journal = {Chance},
+	Number = {2},
+	Pages = {40--50},
+	Publisher = {Taylor \& Francis},
+	Title = {Taking a Chance in the Classroom: Setting the Stage for Data Science},
+	Url = {http://arxiv.org/abs/1502.00318},
+	Volume = {28},
+	Year = {2015},
+	Bdsk-Url-1 = {http://arxiv.org/abs/1502.00318}}
 
 @techreport{bigvis,
-	title = {Bin-summarise-smooth: a framework for visualising large data},
-	author = {Hadley Wickham},
-	year = {2013},
-	abstract = {Visualising large data is challenging both perceptually and computationally: it is hard to know what to display and hard to efficiently display it once you know what you want. This paper proposes a framework that tackles both problems, based around a four step process of bin, summarise, smooth, and visualise. Binning and summarising efficiently (O(n)) condense the large raw data into a form suitable for display (recognising that there are ∼3 million pixels on a screen). Smoothing helps resolve problems from binning and summarising, and because it works on smaller, condensed datasets, it can make use of algorithms that are more statistically efficient even if computationally expensive. The paper is accompanied by a single-core in-memory reference implementation, and is readily extensible with parallel and out-of-memory techniques.},
-	institution = {had.co.nz}
-}
+	Author = {Wickham, Hadley},
+	Institution = {had.co.nz},
+	Title = {Bin-summarise-smooth: a framework for visualising large data},
+	Year = {2013},
+	Abstract = {Visualising large data is challenging both perceptually and computationally: it is hard to know what to display and hard to efficiently display it once you know what you want. This paper proposes a framework that tackles both problems, based around a four step process of bin, summarise, smooth, and visualise. Binning and summarising efficiently (O(n)) condense the large raw data into a form suitable for display (recognising that there are ∼3 million pixels on a screen). Smoothing helps resolve problems from binning and summarising, and because it works on smaller, condensed datasets, it can make use of algorithms that are more statistically efficient even if computationally expensive. The paper is accompanied by a single-core in-memory reference implementation, and is readily extensible with parallel and out-of-memory techniques.}}
 
 @article{syringe,
-  title={Design, Evaluation, and Dissemination of a Plastic Syringe Clip to Improve Dosing Accuracy of Liquid Medications},
-  author={Spiegel, Garrett J and Dinh, Cindy and Gutierrez, Amanda and Lukomnik, Julia and Lu, Benjamin and Shah, Kamal and Slough, Tara and Yeh, Ping Teresa and Mirabal, Yvette and Gray, Lauren Vestewig and others},
-  journal={Annals of Biomedical Engineering},
-  pages={1--9},
-  year={2013},
-  abstract={Pediatricians in Africa requested a tool to improve caregiver dosing of liquid antiretroviral medication. We developed, evaluated and disseminated a clip to control the amount of medication drawn into an oral syringe. In a laboratory, a user tested clips of different lengths, corre- sponding to different volumes, by drawing water into a syringe with a clip. In Texas and Malawi, 149 adults attempted to measure Pepto-BismolTM using a syringe with a clip, a syringe without a clip, and a dosing cup, in a randomly assigned order. In the laboratory, the volume of liquid, ranging from 1 to 4.5 mL, drawn into the syringe was always within at least 5 lL of the intended dose. In Texas, 84% of doses were accurate within ±10%, vs. 63% using the syringe alone, and 21% with the dosing cup. In Malawi, 98% of doses were accurate to within ±10%, vs. 90% using the syringe alone, and 27% with the dosing cup. For target accuracy values within ±45% (±21%), a significantly higher fraction of Houston (Kamangira) participants delivered an accurate dose using the syringe with the clip than with the syringe alone (p<0.05). The clip enables a greater propor- tion of users to accurately measure liquid medication.}
-}
+	Author = {Spiegel, Garrett J and Dinh, Cindy and Gutierrez, Amanda and Lukomnik, Julia and Lu, Benjamin and Shah, Kamal and Slough, Tara and Yeh, Ping Teresa and Mirabal, Yvette and Gray, Lauren Vestewig and others},
+	Journal = {Annals of Biomedical Engineering},
+	Pages = {1--9},
+	Title = {Design, Evaluation, and Dissemination of a Plastic Syringe Clip to Improve Dosing Accuracy of Liquid Medications},
+	Year = {2013},
+	Abstract = {Pediatricians in Africa requested a tool to improve caregiver dosing of liquid antiretroviral medication. We developed, evaluated and disseminated a clip to control the amount of medication drawn into an oral syringe. In a laboratory, a user tested clips of different lengths, corre- sponding to different volumes, by drawing water into a syringe with a clip. In Texas and Malawi, 149 adults attempted to measure Pepto-BismolTM using a syringe with a clip, a syringe without a clip, and a dosing cup, in a randomly assigned order. In the laboratory, the volume of liquid, ranging from 1 to 4.5 mL, drawn into the syringe was always within at least 5 lL of the intended dose. In Texas, 84% of doses were accurate within $\pm$10%, vs. 63% using the syringe alone, and 21% with the dosing cup. In Malawi, 98% of doses were accurate to within $\pm$10%, vs. 90% using the syringe alone, and 27% with the dosing cup. For target accuracy values within $\pm$45% ($\pm$21%), a significantly higher fraction of Houston (Kamangira) participants delivered an accurate dose using the syringe with the clip than with the syringe alone (p<0.05). The clip enables a greater propor- tion of users to accurately measure liquid medication.}}
 
 @article{gpp,
 	Author = {Emerson, John W and Green, Walton A and Schloerke, Barret and Crowley, Jason and Cook, Dianne and Hofmann, Heike and Wickham, Hadley},
@@ -83,30 +118,31 @@ Overall, we found ASH and KernSmooth to be excellent: they are both fast, accura
 	Url = {http://www.tandfonline.com/doi/ref/10.1080/10618600.2012.694762},
 	Volume = {22},
 	Year = {2012},
-	Abstract = {This article develops a generalization of the scatterplot matrix based on the recognition that most datasets include both categorical and quantitative information. Traditional grids of scatterplots often obscure important features of the data when one or more variables are categorical but coded as numerical. The generalized pairs plot offers a range of displays of paired combinations of categorical and quantitative variables. A mosaic plot, fluctuation diagram, or faceted bar chart may be used to display two categorical variables. A side-by-side boxplot, stripplot, faceted histogram, or density plot helps visualize a categorical and a quantitative variable. A traditional scatterplot is suitable for displaying a pair of numerical variables, but options also support density contours or annotating summary statistics such as the correlation and number of missing values, for example. By combining these, the generalized pairs plot may help to reveal structure in multivariate data that otherwise might go unnoticed in the process of exploratory data analysis. Two different R packages provide implementations of the generalized pairs plot, gpairs and GGally. Supplementary materials for this article are available online on the journal web site.},}
+	Abstract = {This article develops a generalization of the scatterplot matrix based on the recognition that most datasets include both categorical and quantitative information. Traditional grids of scatterplots often obscure important features of the data when one or more variables are categorical but coded as numerical. The generalized pairs plot offers a range of displays of paired combinations of categorical and quantitative variables. A mosaic plot, fluctuation diagram, or faceted bar chart may be used to display two categorical variables. A side-by-side boxplot, stripplot, faceted histogram, or density plot helps visualize a categorical and a quantitative variable. A traditional scatterplot is suitable for displaying a pair of numerical variables, but options also support density contours or annotating summary statistics such as the correlation and number of missing values, for example. By combining these, the generalized pairs plot may help to reveal structure in multivariate data that otherwise might go unnoticed in the process of exploratory data analysis. Two different R packages provide implementations of the generalized pairs plot, gpairs and GGally. Supplementary materials for this article are available online on the journal web site.},
+	Bdsk-Url-1 = {http://www.tandfonline.com/doi/ref/10.1080/10618600.2012.694762}}
 
 @article{stat-graph-hist,
 	Author = {Wickham, Hadley},
 	Journal = {Journal of Computational and Graphical Statistics},
+	Number = {1},
+	Pages = {38-44},
 	Title = {Graphical criticism: some historical notes},
-	volume = {22},
-	number = {1},
-	pages = {38-44},
-	year = {2013},
-	URL = {http://www.tandfonline.com/doi/abs/10.1080/10618600.2012.761140},
-}
+	Url = {http://www.tandfonline.com/doi/abs/10.1080/10618600.2012.761140},
+	Volume = {22},
+	Year = {2013},
+	Bdsk-Url-1 = {http://www.tandfonline.com/doi/abs/10.1080/10618600.2012.761140}}
 
 @article{ggmap,
 	Author = {Kahle, David and Wickham, Hadley},
+	Issue = {1},
 	Journal = {The R Journal},
+	Pages = {144-162},
 	Title = {ggmap: Spatial Visualization with ggplot2},
+	Url = {http://journal.r-project.org/archive/2013-1/kahle-wickham.pdf},
+	Volume = {5},
 	Year = {2013},
-  Volume = {5},
-  Issue = {1},
-  Pages = {144-162},
-  URL = {http://journal.r-project.org/archive/2013-1/kahle-wickham.pdf},
-  Abstract = {In spatial statistics the ability to visualize data and models superimposed with their basic social landmarks and geographic context is invaluable. ggmap is a new tool which enables such visualization by combining the spatial information of static maps from Google Maps, OpenStreetMap, Stamen Maps or CloudMade Maps with the layered grammar of graphics implementation of ggplot2. In addition, several new utility functions are introduced which allow the user to access the Google Geocoding, Distance Matrix, and Directions APIs. The result is an easy, consistent and modular framework for spatial graphics with several convenient tools for spatial data analysis.}
-}
+	Abstract = {In spatial statistics the ability to visualize data and models superimposed with their basic social landmarks and geographic context is invaluable. ggmap is a new tool which enables such visualization by combining the spatial information of static maps from Google Maps, OpenStreetMap, Stamen Maps or CloudMade Maps with the layered grammar of graphics implementation of ggplot2. In addition, several new utility functions are introduced which allow the user to access the Google Geocoding, Distance Matrix, and Directions APIs. The result is an easy, consistent and modular framework for spatial graphics with several convenient tools for spatial data analysis.},
+	Bdsk-Url-1 = {http://journal.r-project.org/archive/2013-1/kahle-wickham.pdf}}
 
 @article{stat-graphics,
 	Author = {Wickham, Hadley},
@@ -116,10 +152,10 @@ Overall, we found ASH and KernSmooth to be excellent: they are both fast, accura
 
 @techreport{letter-value-plot,
 	Author = {Hofmann, Heike and Kafadar, Karen and Wickham, Hadley},
+	Institution = {had.co.nz},
 	Journal = {The American Statistican},
 	Title = {Letter-value plots: Boxplots for large data},
 	Year = {2011},
-  Institution = {had.co.nz},
 	Abstract = {
 	Conventional boxplots are useful displays for conveying rough
   information about the central 50% and the extent of data. For small-sized
@@ -146,8 +182,8 @@ Overall, we found ASH and KernSmooth to be excellent: they are both fast, accura
 
 @techreport{boxplots,
 	Author = {Wickham, Hadley and Stryjewski, Lisa},
-	Title = {40 years of boxplots},
 	Institution = {had.co.nz},
+	Title = {40 years of boxplots},
 	Year = {2012},
 	Abstract = {The boxplot plot has been around for over 40 years. This paper summarises the improvements, extensions and variations since Tukey first introduced his 'schematic plot in 1970. We focus particularly on richer displays of density and extensions to 2d.}}
 
@@ -161,25 +197,25 @@ Overall, we found ASH and KernSmooth to be excellent: they are both fast, accura
 @article{glyph-maps,
 	Author = {Wickham, Hadley and Hofmann, Heike and Wickham, Charlotte and Cook, Diane},
 	Journal = {Environmetrics},
+	Number = {5},
+	Pages = {382--393},
 	Title = {Glyph-maps for Visually Exploring Temporal Patterns in Climate Data and Models},
-  journal={Environmetrics},
-  volume={23},
-  number={5},
-  pages={382--393},
-  year={2012},
-  url = {http://onlinelibrary.wiley.com/doi/10.1002/env.2152/full}}
+	Url = {http://onlinelibrary.wiley.com/doi/10.1002/env.2152/full},
+	Volume = {23},
+	Year = {2012},
+	Bdsk-Url-1 = {http://onlinelibrary.wiley.com/doi/10.1002/env.2152/full}}
 
 @article{tidy-data,
 	Author = {Wickham, Hadley},
+	Issue = {10},
 	Journal = {The Journal of Statistical Software},
+	Selected = {TRUE},
 	Title = {Tidy data},
-  Selected = {TRUE},
+	Url = {http://www.jstatsoft.org/v59/i10/},
+	Volume = {59},
 	Year = {2014},
-  Volume = {59},
-  Issue = {10},
-  Abstract = {A huge amount of effort is spent cleaning data to get it ready for analysis, but there has been little research on how to make data cleaning as easy and effective as possible. This paper tackles a small, but important, component of data cleaning: data tidying. Tidy datasets are easy to manipulate, model and visualize, and have a specific structure: each variable is a column, each observation is a row, and each type of observational unit is a table. This framework makes it easy to tidy messy datasets because only a small set of tools are needed to deal with a wide range of un-tidy datasets. This structure also makes it easier to develop tidy tools for data analysis, tools that both input and output tidy datasets. The advantages of a consistent data structure and matching tools are demonstrated with a case study free from mundane data manipulation chores.},
- url = {http://www.jstatsoft.org/v59/i10/}
-}
+	Abstract = {A huge amount of effort is spent cleaning data to get it ready for analysis, but there has been little research on how to make data cleaning as easy and effective as possible. This paper tackles a small, but important, component of data cleaning: data tidying. Tidy datasets are easy to manipulate, model and visualize, and have a specific structure: each variable is a column, each observation is a row, and each type of observational unit is a table. This framework makes it easy to tidy messy datasets because only a small set of tools are needed to deal with a wide range of un-tidy datasets. This structure also makes it easier to develop tidy tools for data analysis, tools that both input and output tidy datasets. The advantages of a consistent data structure and matching tools are demonstrated with a case study free from mundane data manipulation chores.},
+	Bdsk-Url-1 = {http://www.jstatsoft.org/v59/i10/}}
 
 @article{wickham:2000,
 	Author = {Wickham, Hadley and Nunn, C. and McAlister, H. and Devlin, G. and Charleson, H. and Fisher, R. and Heald, S. and Wade, C},
@@ -187,7 +223,7 @@ Overall, we found ASH and KernSmooth to be excellent: they are both fast, accura
 	Date-Modified = {2007-10-22 10:27:46 -0500},
 	Journal = {New Zealand Medical Journal},
 	Keywords = {medicine},
-	Month = {June},
+	Month = Jun,
 	Number = {1111},
 	Pages = {201-4},
 	Title = {The impact of coronary stenting on immediate procedural complication and long-term clinical restenosis at {W}aikato {H}ospital},
@@ -202,7 +238,8 @@ Overall, we found ASH and KernSmooth to be excellent: they are both fast, accura
 	Title = {Reshaping data},
 	Url = {http://stat-computing.org/newsletter/issues/scgn-16-2.pdf},
 	Volume = {16},
-	Year = {2005}}
+	Year = {2005},
+	Bdsk-Url-1 = {http://stat-computing.org/newsletter/issues/scgn-16-2.pdf}}
 
 @techreport{hofmann:2006a,
 	Author = {Hofmann, Heike and Kafadar, Karen and Wickham, Hadley},
@@ -212,7 +249,8 @@ Overall, we found ASH and KernSmooth to be excellent: they are both fast, accura
 	Number = {10},
 	Title = {Letter-Value Box Plots - adjusting box plots for large data sets},
 	Url = {http://www.stat.iastate.edu/preprint/articles/2006-10.pdf},
-	Year = {2006}}
+	Year = {2006},
+	Bdsk-Url-1 = {http://www.stat.iastate.edu/preprint/articles/2006-10.pdf}}
 
 @article{oakley:2006,
 	Author = {Oakley, Amanda and Reeves, Felicity and Bennett, Jane and Holmes, Stephen and Wickham, Hadley},
@@ -223,9 +261,7 @@ Overall, we found ASH and KernSmooth to be excellent: they are both fast, accura
 	Pages = {151-158},
 	Title = {Diagnostic value of written referral and/or images for skin lesions},
 	Volume = {12},
-	Year = {2006},
-
-}
+	Year = {2006}}
 
 @techreport{wickham:2006,
 	Author = {Wickham, Hadley},
@@ -235,8 +271,7 @@ Overall, we found ASH and KernSmooth to be excellent: they are both fast, accura
 	Keywords = {graphics},
 	Number = {1},
 	Title = {Useful ideas from statistical graphics},
-	Year = {2006},
-}
+	Year = {2006}}
 
 @article{dsc-07,
 	Author = {Wickham, Hadley},
@@ -246,7 +281,8 @@ Overall, we found ASH and KernSmooth to be excellent: they are both fast, accura
 	Title = {{DSC} 2007},
 	Url = {http://cran.r-project.org/doc/Rnews/Rnews_2007-1.pdf},
 	Volume = {7},
-	Year = {2007}}
+	Year = {2007},
+	Bdsk-Url-1 = {http://cran.r-project.org/doc/Rnews/Rnews_2007-1.pdf}}
 
 @article{hint,
 	Author = {Weisberg, Sanford and Wickham, Hadley},
@@ -257,7 +293,7 @@ Overall, we found ASH and KernSmooth to be excellent: they are both fast, accura
 	Url = {http://cran.r-project.org/doc/Rnews/Rnews_2007-3.pdf},
 	Volume = {7},
 	Year = {2007},
-	}
+	Bdsk-Url-1 = {http://cran.r-project.org/doc/Rnews/Rnews_2007-3.pdf}}
 
 @techreport{wickham:2007h,
 	Author = {Wickham, Hadley},
@@ -269,7 +305,7 @@ Overall, we found ASH and KernSmooth to be excellent: they are both fast, accura
 	Title = {Meifly: Models explored interactively},
 	Url = {http://www.stat.iastate.edu/preprint/articles/2007-04.pdf},
 	Year = {2007},
-}
+	Bdsk-Url-1 = {http://www.stat.iastate.edu/preprint/articles/2007-04.pdf}}
 
 @article{reshape,
 	Author = {Wickham, Hadley},
@@ -282,7 +318,7 @@ Overall, we found ASH and KernSmooth to be excellent: they are both fast, accura
 	Volume = {21},
 	Year = {2007},
 	Abstract = {This paper presents the reshape package for R, which provides a common framework for many types of data reshaping and aggregation. It uses a paradigm  of `melting' and `casting', where the data are `melted' into a form which distinguishes measured and identifying variables, and then `cast' into a new shape, whether it be a data frame, list, or high dimensional array.  The paper includes an introduction to the conceptual framework, practical advice for melting and casting, and a case study.},
-}
+	Bdsk-Url-1 = {http://www.jstatsoft.org/v21/i12}}
 
 @article{review-r-graphics,
 	Author = {Wickham, Hadley and Cook, Dianne},
@@ -307,7 +343,7 @@ Overall, we found ASH and KernSmooth to be excellent: they are both fast, accura
 	Url = {http://www.jstatsoft.org/v26/b01/paper},
 	Volume = {26},
 	Year = {2008},
-}
+	Bdsk-Url-1 = {http://www.jstatsoft.org/v26/b01/paper}}
 
 @article{future-stat-computing,
 	Author = {Cook, Dianne and Wickham, Hadley},
@@ -318,7 +354,7 @@ Overall, we found ASH and KernSmooth to be excellent: they are both fast, accura
 	Title = {Comment on {The Future of Statistical Computing}},
 	Volume = {50},
 	Year = {2008},
-}
+	Bdsk-Url-1 = {http://dx.doi.org/10.1198/004017008000000505}}
 
 @phdthesis{wickham:2008,
 	Author = {Wickham, Hadley},
@@ -328,7 +364,7 @@ Overall, we found ASH and KernSmooth to be excellent: they are both fast, accura
 	Title = {Practical tools for exploring data and models},
 	Url = {http://had.co.nz/thesis},
 	Year = {2008},
-}
+	Bdsk-Url-1 = {http://had.co.nz/thesis}}
 
 @incollection{visual-svm,
 	Author = {Caragea, Doina and Cook, Dianne and Wickham, Hadley and Honavar, Vasant},
@@ -341,7 +377,7 @@ Overall, we found ASH and KernSmooth to be excellent: they are both fast, accura
 	Title = {Visual Methods for Examining {SVM} Classifiers},
 	Year = {2008},
 	Abstract = {Support vector machines (SVM) offer a theoretically wellfounded approach to automated learning of pattern classifiers. They have been proven to give highly accurate results in complex classification problems, for example, gene expression analysis. The SVM algorithm is also quite intuitive with a few inputs to vary in the fitting process and several outputs that are interesting to study. For many data mining tasks (e.g., cancer prediction) finding classifiers with good predictive accuracy is important, but understanding the classifier is equally important. By studying the classifier outputs we may be able to produce a simpler classifier, learn which variables are the important discriminators between classes, and find the samples that are problematic to the classification. Visual methods for exploratory data analysis can help us to study the outputs and complement automated classification algorithms in data mining. We present the use of tour-based methods to plot aspects of the SVM classifier. This approach provides insights about the cluster structure in the data, the nature of boundaries between clusters, and problematic outliers. Furthermore, tours can be used to assess the variable importance. We show how visual methods can be used as a complement to crossvalidation methods in order to find good SVM input parameters for a particular data set.},
-}
+	Bdsk-Url-1 = {http://dx.doi.org/10.1007/978-3-540-71080-6_10}}
 
 @incollection{tours,
 	Author = {Cook, D. and Lee, E.-K. and Buja, A. and Wickham, H.},
@@ -356,7 +392,7 @@ Overall, we found ASH and KernSmooth to be excellent: they are both fast, accura
 	Title = {Grand Tours, Projection Pursuit Guided Tours and Manual Controls},
 	Year = {2008},
 	Abstract = {How do we find structure in multidimensional data when computer screens are only two-dimensional? One approach is to project the data onto one or two dimensions. Projections are used in classical statistical methods like principal component analysis (PCA) and linear discriminant analysis. PCA (e.g., Johnson and Wichern 2002) chooses a projection to maximize the variance. Fisher's linear discriminant (e.g., Johnson and Wichern 2002) chooses a projection that maximizes the relative separation between group means. Projection pursuit (PP) (e.g., Huber 1985) generalizes these ideas into a common strategy, where an arbitrary function on projections is optimized. The scatterplot matrix (e.g., Becker and Cleveland 1987) also can be considered to be a projection method. It shows projections of the data onto all pairs of coordinate axes, the 2-D marginal projections of the data. These projection methods choose a few select projections out of infinitely many.},
-}
+	Bdsk-Url-1 = {http://dx.doi.org/10.1007/978-3-540-33037-0_13}}
 
 @article{rggobi-rnews,
 	Author = {Wickham, Hadley and Lawrence, Michael and Temple Lang, Duncan and Swayne, Deborah F},
@@ -369,7 +405,7 @@ Overall, we found ASH and KernSmooth to be excellent: they are both fast, accura
 	Url = {http://CRAN.R-project.org/doc/Rnews/Rnews_2008-2.pdf},
 	Volume = {8},
 	Year = {2008},
-}
+	Bdsk-Url-1 = {http://CRAN.R-project.org/doc/Rnews/Rnews_2008-2.pdf}}
 
 @article{programming-with-r,
 	Accepted = {2008-12-09},
@@ -386,7 +422,7 @@ Overall, we found ASH and KernSmooth to be excellent: they are both fast, accura
 	Url = {http://www.jstatsoft.org/v28/b03},
 	Volume = {28},
 	Year = {2008},
-}
+	Bdsk-Url-1 = {http://www.jstatsoft.org/v28/b03}}
 
 @book{ggplot2,
 	Author = {Wickham, Hadley},
@@ -399,7 +435,7 @@ Overall, we found ASH and KernSmooth to be excellent: they are both fast, accura
 	Abstract = {This book describes ggplot2, a new data visualization package for R that uses the insights from Leland Wilkison's Grammar of Graphics to create a powerful and flexible system for creating data graphics. With ggplot2, it's easy to: produce handsome, publication-quality plots, with automatic legends created from the plot specification; superpose multiple layers (points, lines, maps, tiles, box plots to name a few) from different data sources, with automatically adjusted common scales; add customisable smoothers that use the powerful modelling capabilities of R, such as loess, linear models, generalised additive models and robust regression; save any ggplot2 plot (or part thereof) for later modification or reuse; create custom themes that capture in-house or journal style requirements, and that can easily be applied to multiple plots; approach your graph from a visual perspective, thinking about how each component of the data is represented on the final plot.
 
   This book will be useful to everyone who has struggled with displaying their data in an informative and attractive way. You will need some basic knowledge of R (i.e. you should be able to get your data into R), but ggplot2 is a mini-language specifically tailored for producing graphics, and you'll learn everything you need in the book. After reading this book you'll be able to produce graphics customized precisely for your problems, and you'll find it easy to get graphics out of your head and on to the screen or page.},
-}
+	Bdsk-Url-1 = {http://amzn.com/0387981403}}
 
 @article{inference,
 	Author = {Buja, Andreas and Cook, Dianne and Hofmann, Heike and Lawrence, Michael and Lee, Eun-Kyung and Swayne, Deborah F. and Wickham, Hadley},
@@ -411,7 +447,7 @@ Overall, we found ASH and KernSmooth to be excellent: they are both fast, accura
 	Volume = {367},
 	Year = {2009},
 	Abstract = {We propose to furnish visual statistical methods with an inferential framework and protocol, modelled on confirmatory statistical testing. In this framework, plots take on the role of test statistics, and human cognition the role of statistical tests. Statistical significance of `discoveries' is measured by having the human viewer compare the plot of the real dataset with collections of plots of simulated datasets. A simple but rigorous protocol that provides inferential validity is modelled after the `lineup' popular from criminal legal procedures. Another protocol modelled after the `Rorschach' inkblot test, well known from (pop-)psychology, will help analysts acclimatize to random variability before being exposed to the plot of the real data. The proposed protocols will be useful for exploratory data analysis, with reference datasets simulated by using a null assumption that structure is absent. The framework is also useful for model diagnostics in which case reference datasets are simulated from the model in question. This latter point follows up on previous proposals. Adopting the protocols will mean an adjustment in working procedures for data analysts, adding more rigour, and teachers might find that incorporating these protocols into the curriculum improves their students' statistical thinking.},
-}
+	Bdsk-Url-1 = {http://dx.doi.org/10.1098/rsta.2009.0120}}
 
 @incollection{bay-area-blues,
 	Author = {Wickham, Hadley and Poole, David and Swayne, Deborah F},
@@ -424,7 +460,7 @@ Overall, we found ASH and KernSmooth to be excellent: they are both fast, accura
 	Title = {Bay area blues: the effect of the housing crisis},
 	Url = {http://amzn.com/0596157118},
 	Year = {2009},
-}
+	Bdsk-Url-1 = {http://amzn.com/0596157118}}
 
 @article{pipeline,
 	Author = {Lawrence, Michael and Wickham, Hadley and Cook, Dianne and Hofmann, Heike and Swayne, Deborah F.},
@@ -437,7 +473,7 @@ Overall, we found ASH and KernSmooth to be excellent: they are both fast, accura
 	Volume = {24},
 	Year = {2009},
 	Abstract = {This paper describes progress towards developing a platform for rapid prototyping of interactive data visualizations, using R, GGobi, rggobi and RGtk2. GGobi is a software tool for multivariate interactive graphics. At the core of GGobi is a data pipeline that incrementally transforms data through a series of stages into a plot and maps user interaction with the plot back to the data. The GGobi pipeline is extensible and mutable at runtime. The rggobi package, an interface from the R language to GGobi, has been augmented with a low-level interface that supports the customization of interactive data visualizations through the extension and manipulation of the GGobi pipeline. The large size of the GGobi API has motivated the use of the RGtk2 code generation system to create the low-level interface between R and GGobi. The software is demonstrated through an application to interactive network visualization.},
-}
+	Bdsk-Url-1 = {http://dx.doi.org/10.1007/s00180-008-0115-y}}
 
 @article{plumbing,
 	Author = {Wickham, Hadley and Lawrence, Michael and Cook, Dianne and Buja, Andreas and Hofmann, Heike and Swayne, Deborah F.},
@@ -449,7 +485,7 @@ Overall, we found ASH and KernSmooth to be excellent: they are both fast, accura
 	Title = {The plumbing of interactive graphics},
 	Volume = {24},
 	Year = {2009},
-}
+	Bdsk-Url-1 = {http://dx.doi.org/10.1007/s00180-008-0116-x}}
 
 @article{making-sense,
 	Author = {Wickham, Hadley},
@@ -463,7 +499,7 @@ Overall, we found ASH and KernSmooth to be excellent: they are both fast, accura
 	Url = {http://www.jstatsoft.org/v34/b01},
 	Volume = {34},
 	Year = {2010},
-}
+	Bdsk-Url-1 = {http://www.jstatsoft.org/v34/b01}}
 
 @article{jcgs-animations,
 	Author = {Levine, Richard A. and Tierney, Luke and Wickham, Hadley and Sampson, Eric and Cook, Dianne and van Dyk, David A.},
@@ -474,7 +510,7 @@ Overall, we found ASH and KernSmooth to be excellent: they are both fast, accura
 	Title = {Editorial: Publishing Animations, 3D Visualizations, and Movies in JCGS},
 	Volume = {19},
 	Year = {2010},
-}
+	Bdsk-Url-1 = {http://dx.doi.org/10.1198/jcgs.2010.191ed}}
 
 @article{montane-meadows,
 	Author = {Debinski, Diane M. and Wickham, Hadley and Kindscher, Kelly and Caruthers, Jennet C. and Germino, Matthew},
@@ -487,7 +523,7 @@ Overall, we found ASH and KernSmooth to be excellent: they are both fast, accura
 	Title = {Montane meadow change during drought varies with background hydrologic regime and plant functional group},
 	Volume = {91},
 	Year = {2010},
-}
+	Bdsk-Url-1 = {http://dx.doi.org/10.1890/09-0567.1}}
 
 @article{stringr,
 	Author = {Wickham, Hadley},
@@ -500,7 +536,7 @@ Overall, we found ASH and KernSmooth to be excellent: they are both fast, accura
 	Url = {http://journal.r-project.org/archive/2010-2/RJournal_2010-2_Wickham.pdf},
 	Volume = {2},
 	Year = {2010},
-}
+	Bdsk-Url-1 = {http://journal.r-project.org/archive/2010-2/RJournal_2010-2_Wickham.pdf}}
 
 @article{layered-grammar,
 	Author = {Wickham, Hadley},
@@ -518,7 +554,7 @@ Overall, we found ASH and KernSmooth to be excellent: they are both fast, accura
   The topics in this paper include an introduction to the grammar by working through the process of creating a plot, and discussing the components that we need. The grammar is then presented formally and compared to Wilkinson's grammar, highlighting the hierarchy of defaults, and the implications of embedding a graphical grammar into a programming language. The power of the grammar is illustrated with a selection of examples that explore different components and their interactions, in more detail. The paper concludes by discussing some perceptual issues, and thinking about how we can build on the grammar to learn how to create graphical ``poems''.
   
 	},
-}
+	Bdsk-Url-1 = {http://dx.doi.org/10.1198/jcgs.2009.07098}}
 
 @article{glaciers,
 	Author = {Hobbs, John and Wickham, Hadley and Hofmann, Heike and Cook, Diane},
@@ -530,7 +566,7 @@ Overall, we found ASH and KernSmooth to be excellent: they are both fast, accura
 	Title = {Glaciers Melt as Mountains Warm: A Graphical Case Study},
 	Volume = {25},
 	Year = {2010},
-}
+	Bdsk-Url-1 = {http://dx.doi.org/10.1007/s00180-010-0202-8}}
 
 @article{graphics-stat-da,
 	Accepted = {2010-09-01},
@@ -547,14 +583,11 @@ Overall, we found ASH and KernSmooth to be excellent: they are both fast, accura
 	Url = {http://www.jstatsoft.org/v36/b03},
 	Volume = {36},
 	Year = {2010},
-}
+	Bdsk-Url-1 = {http://www.jstatsoft.org/v36/b03}}
 
 @article{inference-infovis,
 	Author = {Wickham, Hadley and Cook, Dianne and Hofmann, Heike and Buja, Andreas},
-	Doi = {10.1109/TVCG.2010.161},
 	Journal = {IEEE Transactions on Visualization and Computer Graphics (Proc. InfoVis '10)},
-	Month = {Nov.-Dec.},
-	Note = {[26% acceptance rate. Best paper award.]},
 	Number = {6},
 	Pages = {973-979},
 	Selected = {TRUE},
@@ -562,7 +595,7 @@ Overall, we found ASH and KernSmooth to be excellent: they are both fast, accura
 	Volume = {16},
 	Year = {2010},
 	Abstract = {How do we know if what we see is really there? When visualizing data, how do we avoid falling into the trap of apophenia where we see patterns in random noise? Traditionally, infovis has been concerned with discovering new relationships, and statistics with preventing spurious relationships from being reported. We  pull these opposing poles closer with two new techniques for rigorous statistical inference of visual discoveries. The ``Rorschach'' helps the analyst calibrate their understanding of uncertainty and the ``line-up'' provides a protocol for assessing the significance of visual discoveries, protecting against the discovery of spurious structure.},
-}
+	Bdsk-Url-1 = {http://dx.doi.org/10.1109/TVCG.2010.161}}
 
 @article{testthat,
 	Author = {Wickham, Hadley},
@@ -575,17 +608,18 @@ Overall, we found ASH and KernSmooth to be excellent: they are both fast, accura
 	Volume = 3,
 	Year = 2011,
 	Abstract = {Software testing is important, but many of us don't do it because it is frustrating and boring. testthat is a new testing framework for R that is easy to learn and use, and integrates with your existing workflow. This paper shows how, with illustrations from existing packages.},
-}
+	Bdsk-Url-1 = {http://journal.r-project.org/archive/2011-1/RJournal_2011-1_Wickham.pdf}}
 
 @article{prodplots,
 	Author = {Wickham, Hadley and Hofmann, Heike},
-	Date-Added = {2011-07-12 07:53:11 -0500},
-	Date-Modified = {2011-07-12 07:55:00 -0500},
 	Journal = {IEEE Transactions on Visualization and Computer Graphics (Proc. InfoVis '11)},
-	Note = {[26% acceptance rate.]},
 	Title = {Product plots},
 	Year = {2011},
-	Abstract = {We propose a new framework for visualising tables of counts, proportions and probabilities. We call our framework product plots, alluding to the computation of area as a product of height and width, and the statistical concept of generating a joint distribution from the product of conditional and marginal distributions. The framework, with extensions, is sufficient to encompass over 20 visualisations previously described in fields of statistical graphics and infovis, including bar charts, mosaic plots, treemaps, equal area plots and fluctuation diagrams.}}
+	Number = {12},
+	Pages = {2223-2230},
+	Volume = {17},
+	Abstract = {We propose a new framework for visualising tables of counts, proportions and probabilities. We call our framework product plots, alluding to the computation of area as a product of height and width, and the statistical concept of generating a joint distribution from the product of conditional and marginal distributions. The framework, with extensions, is sufficient to encompass over 20 visualisations previously described in fields of statistical graphics and infovis, including bar charts, mosaic plots, treemaps, equal area plots and fluctuation diagrams.}
+}
 
 @article{data-expo-09,
 	Author = {Wickham, Hadley},
@@ -596,15 +630,14 @@ Overall, we found ASH and KernSmooth to be excellent: they are both fast, accura
 	Title = {{ASA} 2009 Data Expo},
 	Volume = {20},
 	Year = {2011},
-}
+	Bdsk-Url-1 = {http://dx.doi.org/10.1198/jcgs.2011.1de}}
 
 @techreport{assessment,
 	Author = {Wickham, Hadley and Grolemund, Garrett},
+	Institution = {had.co.nz},
 	Journal = {Technology Innvoations in Statistics Education},
 	Title = {Assessing Programming and Data Analysis},
-	Year = {2011},
-  Institution = {had.co.nz}
-}
+	Year = {2011}}
 
 @article{ggplot2-wires,
 	Author = {Wickham, Hadley},
@@ -619,22 +652,22 @@ Overall, we found ASH and KernSmooth to be excellent: they are both fast, accura
 	Year = {2011},
 	Abstract = {This article discusses ggplot2, an open source R package, based on a grammatical theory of graphics.  The underlying theory has been discussed in depth elsewhere so this article illustrates some of the consequences of the theory for creating new graphics, the importance of programmable graphics, and the rich ecosystem that has grown up around ggplot2.
   },
-}
+	Bdsk-Url-1 = {http://dx.doi.org/10.1002/wics.147}}
 
 @article{tourr-gui,
-  author =	"Bei Huang and Dianne Cook and Hadley  Wickham",
-  title =	"tourrGui: A gWidgets GUI for the Tour to Explore High-Dimensional Data Using Low-Dimensional Projections",
-  journal =	"Journal of Statistical Software",
-  volume =	"49",
-  number =	"6",
-  pages =	"1--12",
-  day =  	"30",
-  month =	"6",
-  year = 	"2012",
-  bibdate =	"2012-04-16",
-  URL =  	"http://www.jstatsoft.org/v49/i06",
-  abstract = {This paper describes a graphical user interface (GUI) for the tourr package in R. The tour is a dynamic graphical method for viewing multivariate data. The GUI allows users to interact with a tour in order to explore the data for structures like clustering, outliers, nonlinear dependence. Users can pause the tour, choose a subset of variables, color points by other variables, and switch between several different types of tours.},
-}
+	Author = {Huang, Bei and Cook, Dianne and Wickham, Hadley},
+	Bibdate = {2012-04-16},
+	Day = {30},
+	Journal = {Journal of Statistical Software},
+	Month = {6},
+	Number = {6},
+	Pages = {1--12},
+	Title = {tourrGui: A gWidgets GUI for the Tour to Explore High-Dimensional Data Using Low-Dimensional Projections},
+	Url = {http://www.jstatsoft.org/v49/i06},
+	Volume = {49},
+	Year = {2012},
+	Abstract = {This paper describes a graphical user interface (GUI) for the tourr package in R. The tour is a dynamic graphical method for viewing multivariate data. The GUI allows users to interact with a tour in order to explore the data for structures like clustering, outliers, nonlinear dependence. Users can pause the tour, choose a subset of variables, color points by other variables, and switch between several different types of tours.},
+	Bdsk-Url-1 = {http://www.jstatsoft.org/v49/i06}}
 
 @article{lubridate,
 	Author = {Grolemund, Garrett and Wickham, Hadley},
@@ -646,7 +679,7 @@ Overall, we found ASH and KernSmooth to be excellent: they are both fast, accura
 	Volume = {40},
 	Year = {2011},
 	Abstract = { This paper presents the lubridate package for R, which facilitates working with dates and times.  Date-times create various technical problems for the data analyst. The paper highlights these problems and offers practical advice on how to solve them using lubridate.  The paper also introduces a conceptual framework for arithmetic with date-times in R.},
-}
+	Bdsk-Url-1 = {http://www.jstatsoft.org/v40/i03/}}
 
 @article{indust-protection,
 	Author = {Quart, Gabrielle and Wickham, Hadley},
@@ -668,7 +701,7 @@ Overall, we found ASH and KernSmooth to be excellent: they are both fast, accura
 	Volume = {40},
 	Year = {2011},
 	Abstract = {This paper describes an R package which produces tours of multivariate data. The package includes functions for creating different types of tours, including grand, guided, and little tours, which project multivariate data (p-D) down to 1, 2, 3, or, more generally, d &lt; p dimensions. The projected data can be rendered as densities or histograms, scatterplots, anaglyphs, glyphs, scatterplot matrices, parallel coordinate plots, time series or images, and viewed using an R graphics device, passed to GGobi, or saved to disk. A tour path can be stored for visualisation or replay. With this package it is possible to quickly experiment with different, and new, approaches to tours of data. This paper contains animations that can be viewed using the Adobe Acrobat PDF viewer.},
-}
+	Bdsk-Url-1 = {http://www.jstatsoft.org/v40/i02/}}
 
 @article{plyr,
 	Author = {Wickham, Hadley},
@@ -683,7 +716,7 @@ Overall, we found ASH and KernSmooth to be excellent: they are both fast, accura
 	Abstract = {Many data analysis problems involve the application of a split-apply-combine strategy, where you break up a big problem into manageable pieces, operate on each piece independently and then put all the pieces back together. This insight gives rise to a new R package that allows you to smoothly apply this strategy, without having to worry about the type of structure in which your data is stored.
 
   The paper includes two case studies showing how these insights make it easier to work with batting records for veteran baseball players and a large 3d array of spatio-temporal ozone measurements.},
-}
+	Bdsk-Url-1 = {http://www.jstatsoft.org/v40/i01/}}
 
 @article{mutatr,
 	Author = {Wickham, Hadley},
@@ -698,7 +731,7 @@ Overall, we found ASH and KernSmooth to be excellent: they are both fast, accura
 	Abstract = {Programming paradigms help us understand the differences and similarities between fundamental choices in language design. This paper looks at R in the context of three paradigms of object oriented programming: mutable vs. immutable objects, generic-function vs message-passing methods, and class-based vs. prototype-based inheritance.
 
   The paper also describes a new OO package for R, mutatr, which provides mutable objects with message-passing methods and prototype-based inheritance. The mutatr package is available on CRAN.},
-}
+	Bdsk-Url-1 = {http://dx.doi.org/10.1007/s00180-011-0235-7}}
 
 @unpublished{building-visualisation,
 	Author = {Wickham, Hadley},
@@ -752,7 +785,7 @@ Overall, we found ASH and KernSmooth to be excellent: they are both fast, accura
 	Title = {Managing your email with inbox zero},
 	Year = {2010}}
 
-@unpublished{model-vis,
+@unpublished{model-vis-talk,
 	Author = {Wickham, Hadley},
 	Note = {Columbia University, New York, NY.},
 	Title = {Model visualisation: removing the blind-fold.},
